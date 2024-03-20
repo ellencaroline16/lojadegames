@@ -7,9 +7,8 @@ import org.springframework.data.repository.query.Param;
 
 import loja.model.Produto;
 
-public interface ProdutoRepository extends JpaRepository<Produto, Long>{
+public interface ProdutoRepository extends JpaRepository<Produto, Long> {
 
-	public List<Produto> findAllByTituloContainingIgnoreCase(@Param("título")String titulo);
-
+	public List<Produto> findAllByTituloContainingIgnoreCase(@Param("título") String titulo);
 
 }
